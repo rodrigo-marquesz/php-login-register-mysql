@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.main-container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    /*aplicando o background degradê na vertical de cima para baixo*/
+    background: linear-gradient(to bottom, #33383D, #1C1D20);
+}
+
+.welcome-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #E0E0E0;
+    width: 35vw;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.left-container {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-form {
+    color: #E0E0E0;
+    display: inline-block;
+    width: 5vw;
+    padding-right: 5px;
+}
+
+.input-form {
+    outline: none;
+    border: 1px solid #FFFFFF;
+    width: 27vw;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #26292C;
+    padding: 25px;
+    color: #E0E0E0;
+    margin: 18px;
+    font-weight: normal;
+}
+
+/*Stack Overflow mostrando como remover estilização dos inputs com autocomplete:
+https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete
+*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #26292C inset !important;
+    -webkit-text-fill-color: #E0E0E0 !important;
+    font-weight: normal;
+}
+
+.input-form::placeholder {
+    color: #E0E0E0;
+}
+
+.button-submit {
+    width: 25vw;
+    height: 70px;
+    margin: 20px;
+    margin-bottom: 22px;
+    border-radius: 50px;
+    border: 1px solid #FF2D04;
+    color: #E0E0E0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.16px;
+    cursor: pointer;
+    background: linear-gradient(to right, #FF2D04, #C13216);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.anchor-reference {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #F22E07;
+    position: absolute;
+}
+
+.anchor-reference-child {
+    font-weight: bold;
+}
+
+.right-container {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#logo-compass {
+    position: absolute;
+    margin: 11px;
+    width: auto;
+}
+
+#mac-compass {
+    width: 50vw;
+    height: 100vh;
+}
+
+/*Media queries para tentar fazer meu layout responsivo*/
+@media (max-width: 1150px) {
+    .main-container {
+        width: auto;
+        height: auto;
+    }
+
+    .left-container {
+        width: 40vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcome-container {
+        margin-bottom: 30px;
+        width: auto;
+    }
+
+    .anchor-reference {
+        align-self: flex-end;
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .input-container {
+        display: block;
+    }
+
+    .input-form {
+        outline: none;
+        border: 1px solid #FFFFFF;
+        width: 33vw;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #26292C;
+        padding: 15px;
+        color: #E0E0E0;
+        margin: 10px;
+        font-weight: normal;
+    }
+
+    .label-form {
+        color: #E0E0E0;
+        display: flex;
+        width: auto;
+        padding-left: 26px;
+    }
+
+    .button-submit {
+        width: 25vw;
+        height: 50px;
+        margin: 10px;
+        border-radius: 50px;
+        border: 1px solid #FF2D04;
+        color: #E0E0E0;
+        font-size: larger;
+        cursor: pointer;
+        background: linear-gradient(to right, #FF2D04, #C13216);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .anchor-reference {
+        align-self: flex-end;
+        text-decoration: none;
+        color: #F22E07;
+        position: relative;
+        padding-top: 40px;
+    }
+    
+    .anchor-reference-child {
+        font-weight: bold;
+    }
+
+
+    /*right-container*/
+    .right-container {
+        width: 60vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo-compass {
+        position: absolute;
+        width: 35vw;
+        margin: 0;
+    }
+
+    #mac-compass {
+        width: 60vw;
+        height: 100%;
+    }
+
+    @media (max-width: 425px) {
+        .left-container {
+            width: 100vw;
+            height: auto;
+            margin-top: 60px;
+        }
+
+        .right-container {
+            position: absolute;
+            width: 100vw;
+            margin-top: 30px;
+        }
+        
+        #mac-compass {
+            display: none;
+        }
+
+        #logo-compass {
+            width: 50vw;
+        }
+
+        .input-form {
+            display: block;
+            width: 85vw;
+        }
+
+        .button-submit {
+            width: 85vw;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50px;
+            border: 1px solid #FF2D04;
+            color: #E0E0E0;
+            font-size: larger;
+            cursor: pointer;
+            background: linear-gradient(to right, #FF2D04, #C13216);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .anchor-reference {
+            align-self: flex-end;
+            text-decoration: none;
+            color: #F22E07;
+            position: relative;
+            padding-top: 0;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .anchor-reference-child {
+            font-weight: bold;
+        }
+    }
+}
