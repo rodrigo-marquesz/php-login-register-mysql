@@ -64,10 +64,22 @@
     position: relative;
 }
 
-/*.input-form:hover + .icon-actions {
+/*focou, mexeu, desfocou, voltou. Se o placeholder NÃO estiver exibindo mais
+significa que o input está preenchido, aí mantém a posição do icon*/
+.input-form:focus + .icon-actions {
     transition: 1s ease-in-out;
     transform: translateX(-65px);
-}*/
+}
+
+.input-form:not(focus) + .icon-actions {
+    transition: 1s ease-in-out;
+    transform: translateX(0px);
+}
+
+.input-form:not(:placeholder-shown) + .icon-actions {
+    transition: 1s ease-in-out;
+    transform: translateX(-65px);
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -119,6 +131,25 @@ input:-webkit-autofill:active{
 #mac-compass {
     width: 50vw;
     height: 100vh;
+}
+
+.login-failed {
+    color: #E9B425;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    margin-right: 2vw;
+}
+
+.sub-text {
+    color: #E9B425;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
 }
 
 /*Media queries para tentar fazer meu layout responsivo*/

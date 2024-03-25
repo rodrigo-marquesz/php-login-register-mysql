@@ -8,42 +8,42 @@
 </head>
 <body>
     <div class="main-container">
-        <form class="left-container" id="left-form">
+        <form class="left-container" id="form" action="../../back-end/cadastro.php" method="POST">
             <div class="welcome-container">
                 <h1>Welcome,</h1>
                 <p>Please register to continue</p>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">first name</label>
-                <input class="input-form" type="text" placeholder="Your first name">
+                <label class="label-form" for="first-name">First Name</label>
+                <input id="first-name" class="input-form" type="text" placeholder="Your first name" autocomplete="given-name" name="first_name" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">last name</label>
-                <input class="input-form" type="text" placeholder="Your last name">
+                <label class="label-form" for="last-name">Last Name</label>
+                <input id="last-name" class="input-form" type="text" placeholder="Your last name" autocomplete="family-name" name="last_name" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">birth date</label>
-                <input class="input-form" type="date" placeholder="MM/DD/YYYY">
+                <label class="label-form" for="birth-date">Birth Date</label>
+                <input id="birth-date" class="input-form" type="date" placeholder="MM/DD/YYYY" name="birth_date" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">country</label>
-                <input class="input-form" type="text" placeholder="Your Country">
+                <label class="label-form" for="country">Country</label>
+                <input id="country" class="input-form" type="text" placeholder="Your Country" autocomplete="country" name="country" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">city</label>
-                <input class="input-form" type="text" placeholder="Your City">
+                <label class="label-form" for="city">City</label>
+                <input id="city" class="input-form" type="text" placeholder="Your City" name="city" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">e-mail</label>
-                <input class="input-form" type="email" placeholder="Add a valid e-mail here">
+                <label class="label-form" for="email">E-mail</label>
+                <input id="email" class="input-form" type="email" placeholder="Add a valid e-mail here" autocomplete="email" name="email" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">password</label>
-                <input class="input-form" type="password" placeholder="Your password">
+                <label class="label-form" for="password">Password</label>
+                <input id="password" class="input-form" type="password" placeholder="Your password" name="password" required>
             </div>
             <div class="input-container">
-                <label class="label-form" for="">password</label>
-                <input class="input-form" type="password" placeholder="Repeat your password">
+                <label class="label-form" for="password-confirm">Repeat Password</label>
+                <input id="password-confirm" class="input-form" type="password" placeholder="Repeat your password" name="repeat_password" required>
             </div>
             <div class="input-container">
                 <button class="button-submit" type="submit">Register Now</button>
@@ -54,11 +54,6 @@
         </form>
 
         <div class="right-container">
-            <img 
-            id="logo-compass"
-            src="../img/logo-cadastro.png" 
-            alt="logo-compass"
-            >
             <img
             id="mac-compass"
             src="../img/cadastro.png"

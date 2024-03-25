@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <header class="header-dashboard">
+                <img src="../img/logo-compasso.png" alt="logo compass uol" class="logo-compasso">
+                <div class="current-time">
+                    <p class="horario"></p>
+                    <p class="data"></p>
+                </div>
+                <div class="weather-container">
+                    <div class="temperature-container">
+                        <p id="user-city"></p>
+                        <div class="sub-temperature-container">
+                            <img src="" alt="Condição climática" id="weather-icon">
+                            <p id="temperature"></p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="action-section-container">
+            <div class="left-as-container">
+                <img src="../img/bola-logo-compasso.png" alt="bola logo compass UOL" class="bola-compasso">
+            </div>
+            <div class="right-as-container">
+                <h3 class="our-mission-small">Our mission is</h3>
+                <p class="our-mission-pt">Nossa missão é</p>
+                <h3 class="our-mission">to transform the world</h3>
+                <p class="our-mission-pt">transformar o mundo</p>
+                <h3 class="our-mission">building digital experiences</h3>
+                <p class="our-mission-pt">construindo experiências digitais</p>
+                <h3 class="our-mission">that enable our client's growth</h3>
+                <p class="our-mission-pt">que permitam o crescimento dos nossos clientes</p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <footer class="footer">
+                <div class="left-footer">
+                    <span>Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a
+                        aberta em segundo plano e abra uma nova janela para continuar a navegar.</span>
+                </div>
+                <div class="linha-vertical"></div>
+                <div class="right-footer">
+                    <div class="refresh-container">
+                        <p>Application <br>
+                            refresh in</p>
+                        <div class="timer">
+                            <p id="actual-time">30</p>
+                            <p>seconds</p>
+                        </div>
+                    </div>
+                    <div class="keep-navigating" id="keep-navigation">
+                        <p>Continuar<br>
+                            Navegando</p>
+                    </div>
+                    <div class="logout" id="logout">
+                        <p>Logout</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
