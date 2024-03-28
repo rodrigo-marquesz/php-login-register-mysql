@@ -1,0 +1,204 @@
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+
+* {
+    font-family: "Mark Pro", "sans-serif";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #FFFFFF , #F0F0F0);
+    justify-content: flex-end;
+}
+
+.header-container {
+    width: 100%;
+    height: 18vh;
+    margin: auto;
+}
+
+.header-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-compasso {
+    align-self: flex-start;
+    margin-top: 3vh;
+    margin-left: 3vw;
+}
+
+.current-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horario {
+    font-size: 133px;
+}
+
+.data {
+    margin-top: -4vh;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 3vh;
+    margin-right: 2vw;
+}
+
+#user-city {
+    font-size: large;
+    margin-left: 1vw;
+}
+
+#temperature {
+    font-size: 3rem;
+}
+
+.sub-temperature-container {
+    display: flex;
+}
+
+.action-section-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.right-as-container {
+    width: 47vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+}
+
+.left-as-container {
+    width: 50vw;
+    display: flex;
+}
+
+.bola-compasso {
+    width: auto;
+    height: 75vh;
+    margin-bottom: -50px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.footer {
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #212221, #1C1D20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.linha-vertical {
+    border-left: 1px solid #FFFFFF;
+    width: 1px;
+    height: 50%;
+    margin: 15px 20px;
+}
+
+.left-footer {
+    width: 45vw;
+    font-size: small;
+    text-align: right;
+    padding-left: 25px;
+}
+
+.right-footer {
+    width: 55vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.refresh-container {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.refresh-container p{
+ margin-right: 2vw; 
+}
+
+#actual-time {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.keep-navigating {
+    width: 9vw;
+    height: 100%;
+    background-color: #FFFFFF;
+    color: #C13216;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logout {
+    width: 9vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.our-mission-small {
+    font-size: 36px;
+    font-weight: 700;
+    color: #C12D18;
+}
+
+.our-mission-pt {
+    font-size: 24px;
+    font-weight: 400;
+    color: #222222;
+}
+
+/*Com 64px de fonte não dá ☠️*/
+.our-mission {
+    font-size: 40px;
+    font-weight: 700;
+    color: #C12D18;
+}
+
+#actual-time {
+    padding-right: 2px;
+}
